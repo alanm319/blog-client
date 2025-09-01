@@ -1,0 +1,13 @@
+<a class="post-card" [routerLink]="['/post', postInfo().id]">
+  <div class="post-image">
+    <img [src]="postInfo().imageUrl" [alt]="postInfo().title" />
+  </div>
+
+  <div class="post-content">
+    <h2 class="post-title">{{ postInfo().title }}</h2>
+    <p class="post-snippet">
+      {{ postInfo().content | slice:0:150 }}{{ postInfo().content.length > 150 ? '...' : '' }}
+    </p>
+  </div>
+</a>
+

@@ -1,0 +1,5 @@
+<section class="post-cards">
+  @for(postCard of postCardList; track $index) {
+    <app-post-item [postInfo]="postCard"></app-post-item>
+  }
+</section>

@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="logo">
+    <a [routerLink]="['/']">My Blog</a>
+  </div>
+
+  <!-- <nav class="nav-links">
+    <a [routerLink]="['/about']">About</a>
+  </nav> -->
+
+  @if (isLoggedIn()) {
+    <div class="auth-section">
+      <span class="username">{{ username }}</span>
+      <button class="auth-btn" (click)="logout()">Logout</button>
+    </div>
+  } @else {
+    <div class="auth-section">
+      <button class="auth-btn" (click)="login()">Login</button>
+      <button class="auth-btn" (click)="signUp()">Sign Up</button>
+    </div>
+  }
+</header>
