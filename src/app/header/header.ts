@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,23 +9,19 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.css'
 })
 export class Header {
-
-  username = 'john';
   
+  authService = inject(AuthService);
+
   isLoggedIn() {
-    return false;
+    return this.authService.isLoggedIn();
   }
 
-  logout() {
-
+  getUsername() {
+    return this.authService.getUsername();
   }
 
-  login() {
-
-  }
-
-  signUp() {
-    
+  logOut() {
+    this.authService.logOut()
   }
 
 }

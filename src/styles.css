@@ -6,3 +6,19 @@
 body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
+
+:root {
+  --primary-color: #2d78ad;
+  --secondary-color: #A9CEF4;
+  --accent-color: #E8E7FA;
+  --shadow-color: #E8E8E8;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #588bae;
+}

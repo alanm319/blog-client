@@ -9,13 +9,13 @@
 
   @if (isLoggedIn()) {
     <div class="auth-section">
-      <span class="username">{{ username }}</span>
-      <button class="auth-btn" (click)="logout()">Logout</button>
+      <span class="username">@{{ getUsername() }}</span>
+      <button class=" btn-primary auth-btn" (click)="logOut()">Logout</button>
     </div>
   } @else {
     <div class="auth-section">
-      <button class="auth-btn" (click)="login()">Login</button>
-      <button class="auth-btn" (click)="signUp()">Sign Up</button>
+      <button class="btn-primary auth-btn" routerLink="/login">Login</button>
+      <button class="btn-primary auth-btn" routerLink="/signup">Sign Up</button>
     </div>
   }
 </header>

@@ -1,6 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Header } from './header/header';
+import { inject } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +12,5 @@ import { Header } from './header/header';
 })
 export class App {
   protected readonly title = signal('blog-client');
+  protected authService = inject(AuthService);
 }
