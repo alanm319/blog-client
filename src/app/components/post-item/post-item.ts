@@ -1,5 +1,5 @@
 import { Component, input} from '@angular/core';
-import { Post } from '../Post'
+import { Post } from '../../Post'
 import { RouterLink } from '@angular/router';
 import { SlicePipe } from '@angular/common';
 @Component({

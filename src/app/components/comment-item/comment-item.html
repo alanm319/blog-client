@@ -1,0 +1,7 @@
+<div class="comment-card">
+  <div class="comment-header">
+    <span class="comment-author">{{commentInfo().author.username}}</span>
+    <span class="comment-date">{{commentInfo().createdAt | date:'short'}}</span>
+  </div>
+  <p class="comment-content">{{commentInfo().content}}</p>
+</div>

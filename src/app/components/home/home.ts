@@ -1,7 +1,7 @@
 import { Component, inject} from '@angular/core';
 import { PostItem } from '../post-item/post-item'
-import { Post } from '../Post';
-import { PostService } from '../services/post.service';
+import { Post } from '../../Post';
+import { PostService } from '../../services/post.service';
 @Component({
   selector: 'app-home',
   imports: [PostItem],

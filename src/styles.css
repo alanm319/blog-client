@@ -14,6 +14,11 @@ body {
   --shadow-color: #E8E8E8;
 }
 
+ button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
 .btn-primary {
   background: var(--primary-color);
   color: #fff;

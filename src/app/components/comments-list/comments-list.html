@@ -1,0 +1,6 @@
+<div class="comments-container">
+  @for (comment of commentsList; track $index) {
+    <app-comment-item [commentInfo]="comment"></app-comment-item>
+  }
+</div>
+

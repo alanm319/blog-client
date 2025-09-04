@@ -1,0 +1,32 @@
+.comment-card {
+  border: 1px solid #000; /* border without color assignment can be black by default */
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.comment-author {
+  font-style: italic;
+}
+
+.comment-date {
+  font-size: 0.75rem;
+  font-style: normal;
+}
+
+.comment-content {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}

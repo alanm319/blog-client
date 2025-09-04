@@ -10,12 +10,15 @@
 }
 
 .post-image img {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  max-height: 300px;
   border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 2rem;
+  object-position: center;
+  display: block;
+  margin: 0 auto 2rem;
 }
+
 
 .post-header {
   margin-bottom: 1.5rem;

@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PostService } from '../services/post.service';
-import { Post } from '../Post';
+import { PostService } from '../../services/post.service';
+import { Post } from '../../Post';
+import { CommentSection } from '../comment-section/comment-section';
 
 @Component({
   selector: 'app-post-detail',
-  imports: [],
+  imports: [CommentSection],
   templateUrl: './post-detail.html',
   styleUrl: './post-detail.css'
 })

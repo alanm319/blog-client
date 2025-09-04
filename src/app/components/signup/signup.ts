@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormControl, Validators} from '@angular/forms';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 
 interface SignupFormValue {
@@ -49,11 +49,8 @@ export class Signup {
   //TODO: refactor
   signUp() {
     const {username, password} = this.signupForm.value as SignupFormValue;
-    this.authService.logIn(username, password).subscribe({
+    this.authService.signUp(username, password).subscribe({
       next: (response) => {
-        const token = response.token;
-        this.authService.setToken(token);
-        this.authService.setUsername(username);
         this.router.navigate(['/login']);
       },
       error: (err) => {

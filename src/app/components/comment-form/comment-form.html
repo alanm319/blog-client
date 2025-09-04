@@ -1,0 +1,12 @@
+<div class="comment-form">
+  <form class="comment-box" [formGroup]="commentForm" (ngSubmit)="postComment()">
+    <h2>Leave a Comment</h2>
+    <textarea placeholder="Leave a comment..." formControlName="comment"></textarea>
+    <div class="comment-actions">
+      <button type="button" (click)="clearComment()">Cancel</button>
+      <button class="btn-primary" type="submit" [disabled]="commentForm.invalid">Comment</button>
+    </div>
+  </form>
+</div>
+
+

@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Header } from './header/header';
+import { Header } from './components/header/header';
 import { inject } from '@angular/core';
 import { AuthService } from './services/auth.service';
 
